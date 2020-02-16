@@ -11,7 +11,7 @@ html{
 }
 
 .background{
-	height: 88vh;
+	height: 94vh;
 	position: relative;
 	background: url("driving.png") center center;
 	background-size: cover;
@@ -22,16 +22,16 @@ html{
 	font-family: 'Noto Serif JP', serif;
 	color: black;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	right: -120%; 
 	transform: translate(-50%,-50%);
 }
 
 .explore{
     position: absolute;
-    top:140%;
+    top:160%;
 	right: 0%; 
-    transform: translate(-210%,-50%);	
+    transform: translate(-100%,-50%);	
     text-align: center;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -56,13 +56,49 @@ html{
 	transition: 0.5s;
 }
 
+.explore2{
+    position: absolute;
+    top:250%;
+	right: 0%; 
+    transform: translate(-125%,-50%);	
+    text-align: center;
+	transition: all 0.5s;
+	cursor: pointer;
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.explore2 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	color:white;
+}
+
+.explore2 span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
 .explore:hover span {
+	padding-right: 25px;
+}
+.explore2:hover span {
 	padding-right: 25px;
 }
 
 .button:hover span:after {
 	opacity: 1;
 	right: 0;
+}
+
+.signal{
+	text-align: center;
 }
 
 .footer-1{
