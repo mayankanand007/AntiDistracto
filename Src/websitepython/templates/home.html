@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            RecipePy 
+        </title>
+        <style type="text/css">
+
+            h1 span {
+                border-bottom:solid black;
+            }
+            .wrapper{
+                text-align: center;
+            }
+            body{
+                background-color: #C3FDB8;
+            }
+          </style>
+    </head>
+    <body>
+        <h1 align ="center"><span>RecipePy: Get recipes for the ingredients in your fridge !!</span></h1>
+        <br><br>
+        <div class="wrapper">
+        <button onclick = "location.href = '{%url 'script' %}'" align ="center">Give me Recipes !!</button> </div>
+        <hr>
+         {{ search }}
+        <hr>
+    </body> 
+</html>

@@ -1,0 +1,35 @@
+item{
+    id:1
+    name: 'Onion'
+
+}
+item{
+    id:2
+    name: 'Chicken'
+
+}
+item{
+    id:3
+    name: 'Tomato'
+
+}
+item{
+    id:4
+    name: 'Lettuce'
+
+}
+item{
+    id:5
+    name: 'Eggs'
+
+}
+item{
+    id:6
+    name: 'Carrots'
+
+}
+item{
+    id:7
+    name: 'Cheese'
+
+}
