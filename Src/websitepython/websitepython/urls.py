@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.button),
-    path('output', views.output, name='script')
+    path('output', views.output, name='script'),
+    path('external', views.external,name='recording')
 ]

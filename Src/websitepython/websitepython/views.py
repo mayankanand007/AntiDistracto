@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import sys
 from pathlib import Path
-
+from subprocess import run,PIPE
 
 
 #For renderting the HTML page
@@ -20,3 +20,10 @@ def output(request):
         search = 'Distracted!'
 
     return render(request,'home.html',{'search': search})
+
+def external(request):
+    HERE = Path(__file__).parent
+    sys.path.append(str(HERE / '../../'))
+    from main import call_drowsy
+    call_drowsy()
+    return render(request,'home.html')
