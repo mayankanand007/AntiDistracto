@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
 	padding: 0.1px;
 	background:#333333;
@@ -9,7 +13,7 @@
 .background{
 	height: 80vh;
 	position: relative;
-	background: url("driving.jpeg") left center;
+	background: url("driving.jpeg") center center;
 	background-size: cover;
 	width: 50%;
 }
@@ -23,7 +27,6 @@
 	transform: translate(-50%,-50%);
 }
 
-/* Start of the animation for the 'Shop Now' button in the front page */
 .explore{
     position: absolute;
     top:140%;
@@ -61,4 +64,15 @@
 	opacity: 1;
 	right: 0;
 }
-/* End of the animation */
+
+.footer-1{
+	padding: 34px;
+	background:white;
+}
+
+.footer-2{
+	padding: 15px;
+	color: #717171;
+	text-align: center;
+	background:#373737;
+}
