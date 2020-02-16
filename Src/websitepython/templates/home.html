@@ -1,29 +1,43 @@
+{% load static from static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            RecipePy 
-        </title>
-        <style type="text/css">
-
-            h1 span {
-                border-bottom:solid black;
-            }
-            .wrapper{
-                text-align: center;
-            }
-            body{
-                background-color: #C3FDB8;
-            }
-          </style>
+            <title>AntiDistracto - Your Watchdog on the Road</title>
+            <link rel="icon" href="favicon.png">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+            <link
+                href="https://fonts.googleapis.com/css?family=Cinzel:700|Libre+Caslon+Display|Noto+Serif+JP:700|Raleway:300&display=swap"
+                rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1 align ="center"><span>RecipePy: Get recipes for the ingredients in your fridge !!</span></h1>
+        <div class="header">
+            <h4>Coming soon!</h4>
+        </div>
+        <div class="background">
+                <div class="brand-name-subheading">
+                    <h1>Alert today - Alive tomorrow.</h1>
+                    <div class="button explore-button">
+                        <a href="#">
+                            <button type="button" class="btn btn-dark btn-lg explore">
+                                <span>Explore</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         <br><br>
         <div class="wrapper">
-        <button onclick = "location.href = '{%url 'script' %}'" align ="center">Give me Recipes !!</button> </div>
+        <button onclick = "location.href = '{%url 'script' %}'" align ="center">Start Recording!!</button> </div>
         <hr>
-         {{ search }}
+        <h2>{{ search }}</h2>
         <hr>
+        <div class="footer-1">
+                <h5>Copyright © 2020 AntiDistracto. All rights reserved.</h5>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body> 
 </html>

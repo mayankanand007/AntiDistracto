@@ -14,6 +14,9 @@ def output(request):
     HERE = Path(__file__).parent
     sys.path.append(str(HERE / '../../'))
     #Importing the main() function
-    from main import main
-    search = main()
+    from main import func
+    search = func()
+    if 'c0' not in search.payload[0].display_name:
+        search = 'Distracted!'
+
     return render(request,'home.html',{'search': search})
