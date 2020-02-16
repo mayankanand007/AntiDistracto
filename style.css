@@ -11,9 +11,9 @@ html{
 }
 
 .background{
-	height: 80vh;
+	height: 88vh;
 	position: relative;
-	background: url("driving.jpeg") center center;
+	background: url("driving.png") center center;
 	background-size: cover;
 	width: 50%;
 }
@@ -66,11 +66,6 @@ html{
 }
 
 .footer-1{
-	padding: 34px;
-	background:white;
-}
-
-.footer-2{
 	padding: 15px;
 	color: #717171;
 	text-align: center;
