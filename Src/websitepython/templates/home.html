@@ -21,19 +21,16 @@
                     <h1>Alert today - Alive tomorrow.</h1>
                     <div class="button explore-button">
                         <a href="#">
-                            <button type="button" class="btn btn-dark btn-lg explore">
+                            <button type="button" class="btn btn-dark btn-lg explore" onclick = "location.href = '{%url 'script' %}'" align ="center">
                                 <span>Explore</span>
                             </button>
                         </a>
                     </div>
                 </div>
             </div>
+            <h2>{{ search }}</h2>
         <br><br>
         <div class="wrapper">
-        <button onclick = "location.href = '{%url 'script' %}'" align ="center">Start Recording!!</button> </div>
-        <hr>
-        <h2>{{ search }}</h2>
-        <hr>
         <div class="footer-1">
                 <h5>Copyright © 2020 AntiDistracto. All rights reserved.</h5>
             </div>
