@@ -18,6 +18,8 @@ def output(request):
     search = func()
     if 'c0' not in search.payload[0].display_name:
         search = 'Distracted!'
+    else:
+        search = 'Not Distracted'
 
     return render(request,'home.html',{'search': search})
 
